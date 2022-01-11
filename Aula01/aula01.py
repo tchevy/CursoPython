@@ -8,6 +8,7 @@ esc = input()
 print("Hello " + nome,'!','sua Idade é: ', idade,'anos,' 'Sua Escolaridade é:', esc)
 
 print('Linha 1')
+# CONTROL + D clona a linha
 print('Linha 2')
 print('Linha 3')
 print('Linha 4')
