@@ -9,11 +9,20 @@ if valor:  # vai dar erro
 else:
     print('tchau')
     
-'''
-#corrigindo usando o pass
+
+#corrigindo usando o pass - usado para reservar o local para escrever codigo futuramente
 valor = True
 if valor:
     pass
+    #comentario
+else:
+    print('Tchau!!')
+'''
+
+#corrigindo usando o ... - usado para reservar o local para escrever codigo futuramente
+valor = True
+if valor:
+    ...
     #comentario
 else:
     print('Tchau!!')
