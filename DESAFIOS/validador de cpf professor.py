@@ -15,25 +15,16 @@ _______________________________________
 11 - (297 % 11) = 11  #    11 - (343 % 11) = 9
 11 > 9 = 0            #
 Digito 1 = 0          #    Digito 2 = 9
-
-
 """
-'''
-novo_cpf = '16899535009'
+cpf = '16899535009'
+novo_cpf = cpf[:-2]
+reverso = 10
 
-if cpf == novo_cpf:
-    print('Válido')
-else:    
-    print('Inválido')
-'''
-
-#cpf = input('Digite seu cpf sem o digito: ')
-cpf = 168995350
-digito = ''
-digito2 = ''
-
-while cpf :
-    print(cpf)
-    if cpf <= 9:
-
-break
+print(novo_cpf)
+for index in range(19):
+    if index > 8:
+        index -= 9
+    print(index, reverso)
+    if reverso < 2:
+         reverso = 11
+    reverso -= 1
