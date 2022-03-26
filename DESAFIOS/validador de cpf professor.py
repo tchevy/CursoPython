@@ -16,15 +16,32 @@ _______________________________________
 11 > 9 = 0            #
 Digito 1 = 0          #    Digito 2 = 9
 """
-cpf = '16899535009'
-novo_cpf = cpf[:-2]
-reverso = 10
+while True:
+    cpf = input('Digite um numero de CPF: ')
+    novo_cpf = cpf[:-2]
 
-print(novo_cpf)
-for index in range(19):
-    if index > 8:
-        index -= 9
-    print(index, reverso)
-    if reverso < 2:
-         reverso = 11
-    reverso -= 1
+    reverso = 10
+    total = 0
+
+    # print(novo_cpf)
+    for index in range(19):
+        if index > 8:
+            index -= 9
+        total += int(novo_cpf[index]) * reverso
+    # print(cpf[index],index, reverso)
+
+
+        reverso -= 1
+        if reverso < 2:
+            reverso = 11
+            d = 11 - (total % 11)
+            if d > 9:
+                d = 0
+            total = 0
+            novo_cpf += str(d)
+    if cpf == novo_cpf:
+        print('Válido')
+
+    else:
+        print('Inválido')
+    break
