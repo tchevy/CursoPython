@@ -19,23 +19,23 @@ tupla = (
 ex5 = [(x,y) for x, y in tupla]
 ex5 = dict(ex5)
 
-#print(ex1)
+print(ex1)
 print(ex2)
-# print(ex3)
-# print(ex4)
-#print(ex5['chave2'])
+print(ex3)
+print(ex4)
+print(ex5['chave2'])
 
 l3 = list(range(100))
 ex6 = [v for v in l3 if v % 2 == 0] # Numeros divisiveis por 2
-#print(ex6)
+print(ex6)
 
 ex7 = [v for v in l3 if v % 3 == 0 if v % 8 == 0] # Numeros divisiveis por 3 e por 8 diolinux
 
-#print(ex7)
+print(ex7)
 
 # usando else
 
-ex8 = [v if v % 3 == 0 else '#' for v in l3] # Numeros divisiveis por 2
+x8 = [v if v % 3 == 0 else '#' for v in l3] # Numeros divisiveis por 2
 #print(ex8)
 
 ex9 =  [v if v % 3 == 0 and v % 8 ==0 else '#' for v in l3] # Numeros divisiveis por 3 e 8 usando and e else
